@@ -1,0 +1,236 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #dadaec;
+  color: #000000;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background: #007BFF;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+header a {
+  color: #1c222e;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: color 0.5s;
+}
+header a:hover {
+  background-color: #494c4e;
+  color: white;
+}
+
+
+/* Sections */
+section {
+  margin-bottom: 35px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.589);
+  
+}
+
+section ul {
+  background-color: #aeb8e2;
+  list-style-type:disc;
+  padding: 15px;
+  margin-right: 1000px;
+  border-radius: 10px;
+  display: inline-block;
+
+}
+
+#fb {
+  padding: 5px;
+  color: rgb(38, 0, 255);
+  background-color: #eff2ff;
+  margin: 0 auto;
+  border-radius:5px 10px;
+  text-decoration: none;
+   border: 1px solid #111010;
+   transition: color 0.5s;
+}
+#fb:hover{
+  background-color: rgb(0, 0, 255);
+   color: white;
+}
+#yt{
+  padding: 5px;
+  color: rgb(255, 0, 0);
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius:5px 10px;
+  text-decoration: none;
+   border: 1px solid #111010;
+   transition: color 0.5s;
+}
+#yt:hover{
+  background-color: rgb(248, 0, 0);
+   color: white;
+}
+#google{
+  padding: 5px;
+  color: #4285F4;
+  background-color: transparent;
+  margin: 0 auto;
+  border-radius:5px 10px;
+  text-decoration: none;
+   border: 1px solid #111010;
+   transition: color 0.5s;
+}
+#google:hover{
+  background-color:  #4285F4;
+  color:  #F8F8F8;
+}
+#x{
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius:5px 10px;
+  text-decoration: none;
+   border: 1px solid rgb(255, 255, 255);
+   transition: color 0.5s;
+}
+#x:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+   border: 1px solid rgb(3, 3, 3);
+}
+
+
+
+/* Images */
+img {
+  display:block;
+  border-radius: 10px;
+}
+
+/* Skill boxes */
+.skill-box {
+  background: #caaaaa;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 600px;
+  display: inline-block;
+}
+
+/* Profile Card */
+.profile-card {
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
+}
+
+.profile-card .avatar {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Forms */
+form {
+  background: white;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.39);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+   border: 1px solid #111010;
+}
+#reset{
+ width: 30%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #111010;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background: #007BFF;
+  color: white;
+}
+tr:nth-child(even) {
+  background: #969393;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  background: #ff0000;
+  color: white;
+  border-radius: 500px;
+}
+footer .fa-google {
+  color: white;
+  transition: color 0.5s;
+}
+footer .fa-google:hover{
+  color: #4285F4;
+}
+@media (max-width:460px){
+  .avatar{width:110px;height:110px;margin-top:-60px}
+  .profile-card{padding:20px}
+  .name{font-size:1.2rem}
+}
