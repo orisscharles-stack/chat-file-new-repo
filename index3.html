@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Day 10 - Semantic HTML Practice</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <link rel="stylesheet" href="styling.css">
 </head>
 <body>
-
   <header>
-    <h1>My Blog</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#articles">Articles</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Charles Oriss</h1>
+    <p>Aspiring Web Developer | South Africa</p>
   </header>
 
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <section id="articles">
-      <h2>Latest Articles</h2>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Motivated beginner developer passionate about building accessible and responsive websites.</p>
+    </section>
 
+    <section id="experience">
+      <h2>Experience</h2>
       <article>
-        <header>
-          <h3>Learning Semantic HTML</h3>
-          <p><time datetime="2025-09-26">September 26, 2025</time></p>
-        </header>
-        <p>Semantic HTML makes your pages more meaningful and accessible...</p>
-        <footer>
-          <p>Written by Charles</p>
-        </footer>
-      </article>
-
-      <article>
-        <header>
-          <h3>My Web Dev Journey</h3>
-          <p><time datetime="2025-09-25">September 25, 2025</time></p>
-        </header>
-        <p>I started learning HTML, CSS, and forms. Now I can build small projects...</p>
-        <footer>
-          <p>Written by Charles</p>
-        </footer>
+        <h3>Intern –ITThynk Tech Solutions</h3>
+        <p><time datetime="2025-06">September 2025</time> – <time datetime="2025-12">Date</time></p>
+        <p>Worked on small frontend projects, and basic styling tasks.</p>
       </article>
     </section>
 
-    <aside>
-      <h2>About Me</h2>
-      <p>I’m Charles, an aspiring web developer. I love practicing HTML & CSS!</p>
-    </aside>
+    <section id="education">
+      <h2>Education</h2>
+      <p>High school graduate</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>Git & GitHub</li>
+        <li>Basic JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="orisscharles@gmail.com">orisscharles@gmail.com</a></p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Charles. All rights reserved.</p>
+    <p>&copy; 2025 Charles Oriss. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
