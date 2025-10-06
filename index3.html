@@ -3,62 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Resume</title>
+  <title>My Personal Card</title>
+
+  <!-- Link Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Link CSS file -->
   <link rel="stylesheet" href="styling.css">
+  <link rel="stylesheet" href="css/all.min.css">
 </head>
+
 <body>
-  <header>
-    <h1>Charles Oriss</h1>
-    <p>Aspiring Web Developer | South Africa</p>
-  </header>
 
-  <nav aria-label="Main Navigation">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Main container -->
+  <div class="card">
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Motivated beginner developer passionate about building accessible and responsive websites.</p>
-    </section>
+    <!-- Profile picture -->
+    <img src="img/Icognito.jpeg" alt="Profile Picture" class="profile-img">
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <article>
-        <h3>Intern –ITThynk Tech Solutions</h3>
-        <p><time datetime="2025-06">September 2025</time> – <time datetime="2025-12">Date</time></p>
-        <p>Worked on small frontend projects, and basic styling tasks.</p>
-      </article>
-    </section>
+    <!-- Name and role -->
+    <h1 class="name">Charles</h1>
+    <p class="role">Aspiring Web Developer</p>
 
-    <section id="education">
-      <h2>Education</h2>
-      <p>High school graduate</p>
-    </section>
+    <!-- Bio -->
+    <p class="bio">I enjoy building small web projects to improve my skills in HTML, CSS, and JavaScript.</p>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML & CSS</li>
-        <li>Git & GitHub</li>
-        <li>Basic JavaScript</li>
-      </ul>
-    </section>
+    <!-- Buttons -->
+    <div class="buttons">
+      <a href="https://www.facebook.com/profile.php?id=100088061376585" class="btn" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/@justcharles256" class="btn primary" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://github.com/orisscharles-stack" class="btn" id="github" target="_blank"><i class="fa-brands fa-github "></i></a>
+    </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="orisscharles@gmail.com">orisscharles@gmail.com</a></p>
-    </section>
-  </main>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Charles Oriss. All rights reserved.</p>
-  </footer>
 </body>
 </html>
