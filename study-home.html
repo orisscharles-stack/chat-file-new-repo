@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All I know in one page</title>
   <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="study-home.css">
+  <link rel="stylesheet" href="file.css">
 </head>
-<body>
-
+<body id="content-wrapper">
+  
   <!-- Day 1: Headings, Paragraphs, Links -->
   <header>
-    <h1>Welcome to My Learning Website</h1>
-    <p>This website shows everything I've learned from Day 1 to Day 7 in HTML & CSS.</p>
+    <h1>Welcome to My First Website</h1>
+    <p id="intro">This website shows everything I've learned from Day 1 till date in HTML & CSS.</p>
     <nav>
       <a href="#about">About</a> |
       <a href="#skills">Skills</a> |
@@ -22,130 +22,141 @@
   </header>
 
   <!-- Day 2: Images, Lists -->
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="img/Icognito.jpeg" alt="My Profile Picture" width="150">
-    <p>Hello, my name is <strong>Charles</strong>. I am learning web development step by step.</p>
-    <h3>My Hobbies</h3>
-    <ul>
-      <li class="li-box">Coding</li>
-      <li class="li-box">Watching tutorials</li>
-      <li class="li-box">Designing websites</li>
-    </ul>
-  </section>
-
-  <!-- Day 3: Divs, Spans -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-box">
-      <span>HTML</span>
-    </div>
-    <div class="skill-box">
-      <span>CSS</span>
-    </div>
-    <div class="skill-box">
-      <span>JavaScript (coming soon!)</span>
-    </div>
-  </section>
-
-  <!-- Day 4: Attributes -->
-  <section id="links">
-    <h2 id="ulinks">Useful Links</h2>
-    <p>Here are some usefull links:</p>
-    <a id=yt href="https://www.youtube.com/@justcharles256" target="_blank" title="Youtube.com"><i class="fa-brands fa-youtube"></i></a> |
-    <a id=fb href="https://www.facebook.com/profile.php?id=100088061376585" target="_blank" title="Facebook"> <i class="fa-brands fa-facebook-f"></i></a> |
-    <a id=google href="https://www.google.com" target="_blank" title="Google"><i class="fa-brands fa-google"></i></a> |
-    <a id=x href="https://www.x.com/@justcharles256" target="_blank" title="X.com"><i class="fa-brands fa-x-twitter"></i></a> 
-
-  </section>
-
-  <!-- Day 5: Profile Card -->
-  <section id="profile">
-    <h2>Profile Card</h2>
-    <div class="profile-card">
-      <img src="img/Icognito.jpeg" alt="Avatar" class="avatar">
-      <h3>Charles</h3>
-      <p>Aspiring Web Developer</p>
-    </div>
-  </section>
-
-  <!-- Day 6: Form -->
-  <section id="form">
-    <h2>Simple Form</h2>
-    <form>
-      <label for="username">Username:</label><br>
-      <input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
-
-       <label for="phonenumber">Phone Number</label><br>
-      <input type="tel" id="phonenumber" name="phonenumber" placeholder="Phone" ><br><br>
-
-      <label for="age">Age</label><br>
-      <input type="number" id="number" name="age" placeholder="1" min="0" max="200"><br><br>
-
-      <label for="password">Password:</label><br>
-      <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
-
-      <button id=reset type="reset">Reset</button>
-
-      <button type="submit">Login</button>
-    </form>
-  </section>
-
-  <!-- Day 7: Contact Form -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <label for="name">Full Name:</label><br>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
-
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea><br><br>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-  <section id="data">
-  <h2>Project Status</h2>
-  <table>
-    <tr>
-      <th>Project</th>
-      <th>Status</th>
-      <th>Completion</th>
-    </tr>
-    <tr>
-      <td>Portfolio</td>
-      <td>Done</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <td>Blog</td>
-      <td>In Progress</td>
-      <td>60%</td>
-    </tr>
-    <tr>
-      <td>Contact Form</td>
-      <td>Completed</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-  </table>
-</section>
-<section>
-  <aside>
-    <h2>Skills</h2>
+  
+  <main>
+    <article>
+       <h2>A short Article</h2>
+       <p>This Webpage will be the combination of all I have learnt. Starting from day one, I will continue to add improvements, with every thing that I have learnt. Hopefully at the end of the day I will be a very good developer</p>
+    </article>
+     <br/>
+    
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="img/Icognito.jpeg" alt="My Profile Picture" width="150">
+      <p>Hello, my name is <strong>Charles</strong>. I am learning web development step by step.</p>
+      <h3>My Hobbies</h3>
       <ul>
-        <li>HTML & CSS</li>
-        <li>Git & GitHub</li>
-        <li>Basic JavaScript</li>
+        <li class="li-box">Coding</li>
+        <li class="li-box">Watching tutorials</li>
+        <li class="li-box">Designing websites</li>
       </ul>
-  </aside>
-</section>
+    </section>
+     <br/> <br/>
+
+
+    <!-- Day 3: Divs, Spans -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-box">
+        <span>HTML</span>
+      </div>
+      <div class="skill-box">
+        <span>CSS</span>
+      </div>
+      <div class="skill-box">
+        <span>JavaScript (coming soon!)</span>
+      </div>
+    </section>
+     <br/> <br/>
+
+     
+    <!-- Day 4: Attributes -->
+    <section id="links">
+      <h2 id="ulinks">Useful Links</h2>
+      <p>Here are some usefull links:</p>
+      <a id=yt href="https://www.youtube.com/@justcharles256" target="_blank" title="Youtube.com"><i class="fa-brands fa-youtube"></i></a> |
+      <a id=fb href="https://www.facebook.com/profile.php?id=100088061376585" target="_blank" title="Facebook"> <i class="fa-brands fa-facebook-f"></i></a> |
+      <a id=google href="https://www.google.com" target="_blank" title="Google"><i class="fa-brands fa-google"></i></a> |
+      <a id=x href="https://www.x.com/@justcharles256" target="_blank" title="X.com"><i class="fa-brands fa-x-twitter"></i></a> 
+    </section>
+    <br/> <br/>
+
+
+    
+    <!-- Day 5: Profile Card -->
+    <section id="profile">
+      <h2>Profile Card</h2>
+      <div class="profile-card">
+        <img src="img/Icognito.jpeg" alt="Avatar" class="avatar">
+        <h3>Charles</h3>
+        <p>Aspiring Web Developer</p>
+        <p><a href="https://www.gmail.com" title="Email me @">orisscharles@gmail.com</a></p>
+      </div>
+    </section>
+
+    <!-- Day 6: Form -->
+    <section id="form">
+      <h2>Simple Form</h2>
+      <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
+
+        <label for="phonenumber">Phone Number</label><br>
+        <input type="tel" id="phonenumber" name="phonenumber" placeholder="Phone" ><br><br>
+
+        <label for="age">Age</label><br>
+        <input type="number" id="number" name="age" placeholder="1" min="0" max="200"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+
+        <button id=reset type="reset">Reset</button>
+
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <!-- Day 7: Contact Form -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+
+      <section id="data">
+        <h2>Project Status</h2>
+        <table>
+          <tr>
+            <th>Project</th>
+            <th>Status</th>
+            <th>Completion</th>
+          </tr>
+          <tr>
+            <td>Portfolio</td>
+            <td>Done</td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td>Blog</td>
+            <td>In Progress</td>
+            <td>60%</td>
+          </tr>
+          <tr>
+            <td>Contact Form</td>
+            <td>Completed</td>
+            <td>100%</td>
+          </tr>
+          <tr>
+        </table>
+      </section>
+
+      
+  </main>
+
 
   <footer>
-    <p>&copy; 2025 Charles — All Rights Reserved. <a id=google.com href="https://www.google.com" target="_blank" title="Google.com"><i class="fa-brands fa-google"></i></a></p>
+    <p>&copy; 2025 Charles — All Rights Reserved. <a style="color: white;" id=google.com href="https://www.google.com" target="_blank" title="Google.com"><i class="fa-brands fa-google"></i></a></p>
  </footer>
 
 </body>
